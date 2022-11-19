@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <Target Name="PrePublishTarget" AfterTargets="Publish">
-    <Exec Command="dotnet tool install --global"/>
+    <Exec Command="dotnet tool install --global dotnet-ef"/>
   </Target>
 
 </Project>
