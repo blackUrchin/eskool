@@ -20,7 +20,8 @@
   </ItemGroup>
 
   <Target Name="PrePublishTarget" AfterTargets="Publish">
-    <Exec Command="dotnet ef database update --project Presentation --context ApplicationDbContext" />
+    <Exec Command="echo  &quot;Migrating Database ...&quot;" />
+    <Exec Command="dotnet-ef database update --project Presentation --context ApplicationDbContext"/>
   </Target>
 
 </Project>
